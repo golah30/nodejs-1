@@ -3,17 +3,12 @@ const fs = require('fs'),
   inputPath = process.argv[2],
   outputPath = process.argv[3],
   delFiles = process.argv[4];
-//   inputPath = '../Тест',
-//   outputPath = '../Результат';
 
 let counter = 0;
 let transported = 0;
 function createDirectory(path) {
   if (!fs.existsSync(path)) {
     fs.mkdirSync(path);
-    console.log(`created directory '${path}'`);
-  } else {
-    console.log(`directory '${path}' is exist`);
   }
 }
 
