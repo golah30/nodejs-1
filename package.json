@@ -1,0 +1,29 @@
+{
+  "name": "js-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "eslint": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/golah30/nodejs-1.git"
+  },
+  "author": "Kurilenko Dima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/golah30/nodejs-1/issues"
+  },
+  "homepage": "https://github.com/golah30/nodejs-1#readme"
+}
