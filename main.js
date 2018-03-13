@@ -76,15 +76,19 @@ function processFiles () {
 
 function processFile (file) {
   createDirectory(path.join(outputPath, file.name[0]))
-    .then(cpFile(file))
+    .then(() => {
+      return cpFile(file);
+    })
     .then(() => {
       if (typeof delFiles !== 'undefined') {
-        deletefile(file.src);
+        return deletefile(file.src);
       }
     })
     .then(() => {
       if (typeof delFiles !== 'undefined' && deleted === FILES.length) {
-        deleteDirs(inputPath);
+        return deleteDirs(inputPath);
+      } else {
+        console.log(deleted + ' files deleted. Total: ' + FILES.length);
       }
     })
     .catch(e => {
